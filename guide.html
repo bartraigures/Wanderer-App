@@ -18,11 +18,16 @@
 <main class="doc gutter">
   <ol class="contents">
     <li><a href="#map">The map</a></li>
+    <li><a href="#search">Search</a></li>
     <li><a href="#offline">Offline</a></li>
     <li><a href="#recording">Recording</a></li>
     <li><a href="#planning">Planning</a></li>
     <li><a href="#suggestions">Suggestions</a></li>
+    <li><a href="#following">Following a route</a></li>
     <li><a href="#saved">Saved routes</a></li>
+    <li><a href="#trimming">Trimming a track</a></li>
+    <li><a href="#fitness">Apple Fitness</a></li>
+    <li><a href="#devices">On more than one device</a></li>
     <li><a href="#settings">Settings</a></li>
   </ol>
   <article>
@@ -39,6 +44,9 @@
     </ul>
     <p>Bottom left are the scale bar and the map you're looking at, such as <em>1:25 000 Explorer</em>. The Explorer map appears as you zoom in and the Landranger map as you zoom out.</p>
 
+    <h2 id="search">Search</h2>
+    <p>Tap the magnifying glass beside the grid reference to search for a town, a fell, a lake, a postcode or a grid reference such as <em>NY 215 072</em>. Places with exactly the name you typed come first, then towns, hills and water ahead of streets, nearest first. Tap a result to move the map there; an orange dot marks the spot.</p>
+
     <h2 id="offline">Offline</h2>
     <p>Any map you have looked at is kept on the phone. To prepare for somewhere without a signal, open <strong>More → Download area for offline</strong>. A frame appears over the map; move and zoom until the area you want is inside it. Wanderer shows the size of the download before you start. Leave <em>Footpaths for route planning</em> switched on so you can plan routes there offline too. Keep Wanderer open until the download finishes; the screen stays on while it runs.</p>
 
@@ -47,6 +55,7 @@
     <p>Lock the phone and put it away: recording carries on, and the figures appear on the lock screen and in the Dynamic Island. Pause and resume with the buttons in the panel. The stop button asks whether to save the track or discard it.</p>
     <p>The track is saved every few seconds. If Wanderer is closed or the phone switches off, open it again and the recording will be waiting, paused, with a note that it was recovered. Tap play to carry on.</p>
     <p>The first time you record, iPhone asks whether Wanderer may use Motion &amp; Fitness. Allow it: that is how the ascent is measured with the barometer.</p>
+    <p>When you finish, the track goes straight onto the map and its details open: the times, distance, speeds, climb and a height profile. If it looks as though recording carried on after the walk ended, Wanderer offers to trim it first (see <a href="#trimming">Trimming a track</a>).</p>
 
     <h2 id="planning">Planning</h2>
     <p>Tap <strong>Plan</strong> at the top of the screen. A crosshair appears in the middle of the map.</p>
@@ -61,20 +70,39 @@
       <li><strong>Walk / Cycle – roads / Cycle – off-road.</strong> Tap to change who the route is for. Walking prefers public footpaths and bridleways. Road cycling prefers quiet lanes and cycleways. Off-road cycling prefers bridleways, byways and tracks. The cycling choices never use a public footpath.</li>
       <li><strong>Undo</strong> removes the last point, and <strong>Save</strong> keeps the route under a name of your choosing.</li>
     </ul>
+    <p>As the route grows, the distance shows the total climb beside it, and a height profile appears above the buttons, worked out from Ordnance Survey's height data.</p>
     <p>A route you've planned stays on the map when you go back to walking, so you can follow it while recording.</p>
 
     <h2 id="suggestions">Suggestions</h2>
     <p>In Plan mode, tap <strong>Suggest</strong>. Choose the kind of trip, a distance, and whether to start from where you are or from the crosshair, then tap <strong>Find loops</strong>. Wanderer offers three circular routes heading in different directions, each with its length and what it's made of. Tap one to load it into the planner, where you can change it, save it, or tap Done and set off.</p>
     <p>If the footpaths for that area aren't on your phone yet, Wanderer says so and offers to download them first.</p>
 
+    <h2 id="following">Following a route</h2>
+    <p>With a planned route on the map in Walk mode, a label near the top shows how far there is to go. Stray more than about 50 metres from the route and it turns orange, saying how far off you are, and the phone gives a short buzz. While you're recording, the same line appears on the lock screen, which lights up when you leave the route.</p>
+    <p>Wanderer follows the route you've just planned, or, if there isn't one, the saved route shown on the map, when only one is shown.</p>
+
     <h2 id="saved">Saved routes</h2>
-    <p>Open <strong>More → Saved routes &amp; settings</strong>. Planned routes and recorded tracks are listed together, newest first; the buttons at the top show just one kind. The eye on each row shows or hides it on the map, and any number can be shown at once. Tap a row to show it and zoom the map to it. Swipe left to delete; swipe right on a planned route to edit it. The share button sends a GPX file. Your tracks and routes are also in the Files app, under On My iPhone → Wanderer.</p>
+    <p>Open <strong>More → Saved routes &amp; settings</strong>. Planned routes and recorded tracks are listed together, newest first; the buttons at the top show just one kind. The eye on each row shows or hides it on the map, and any number can be shown at once. Swipe left to delete; swipe right on a planned route to edit it, or on a recorded track to trim it. The share button sends a GPX file.</p>
+    <p>Tap a row for its details: a map, the figures, a height profile and, for a planned route, an estimated time, worked out from the distance and the climb. From there you can show it on the map, edit or trim it, rename it, share it or delete it.</p>
+    <p>Editing a planned route reopens it in the planner, where you can add points to the end or take them off with Undo; saving updates the route. Points in the middle can't yet be moved.</p>
+
+    <h2 id="trimming">Trimming a track</h2>
+    <p>It's easy to forget to stop recording at the end of a walk, and to find the track carries on into the pub or along the road home. When you press stop, Wanderer looks for a long stop at the end, or a spell at car speed, and if it finds one it says when it thinks you finished and offers to trim the track to then.</p>
+    <p>You can trim any recorded track later, from its details or by swiping right on it in Saved routes. Drag the slider to the moment you finished: the map shows the part you'll keep in purple and the part to be removed in grey. The distance, time and climb are worked out again for what's kept.</p>
+
+    <h2 id="fitness">Apple Fitness</h2>
+    <p>Wanderer can save each walk, ride or paddle to Apple Health as a workout, with the route, time, distance, climb and estimated calories, so it appears in the Fitness app. It offers this after your first recording; you can also switch it on in Settings, under Health, or add a single track from its details with <strong>Add to Apple Fitness</strong>. Settings can send all your earlier tracks across in one go. A trimmed track replaces its workout in Health.</p>
+
+    <h2 id="devices">On more than one device</h2>
+    <p>If iCloud Drive is on, your routes and tracks are kept in iCloud Drive, in a folder called Wanderer, and appear on every iPhone and iPad signed in to your Apple Account. A route planned on the iPad is there on the iPhone when you set off. Maps, footpaths and heights are downloaded separately on each device. Settings shows where your routes are being kept.</p>
 
     <h2 id="settings">Settings</h2>
     <p>Settings is at the bottom of the saved routes list.</p>
     <ul>
       <li><strong>Units.</strong> Metric (kilometres, metres, km/h) or imperial (miles, feet, mph).</li>
       <li><strong>Show on lock screen while recording.</strong> Turn off if you'd rather not have the Live Activity.</li>
+      <li><strong>Save to Apple Health &amp; Fitness.</strong> See <a href="#fitness">Apple Fitness</a>.</li>
+      <li><strong>Show the welcome screens again</strong>, for a reminder of where everything is.</li>
     </ul>
   </article>
 </main>

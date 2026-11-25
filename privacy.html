@@ -20,6 +20,8 @@
     <li><a href="#summary">In short</a></li>
     <li><a href="#location">Your location</a></li>
     <li><a href="#stored">What is stored</a></li>
+    <li><a href="#icloud">iCloud</a></li>
+    <li><a href="#health">Apple Health</a></li>
     <li><a href="#network">What goes over the internet</a></li>
     <li><a href="#permissions">Permissions</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -29,26 +31,34 @@
     <p class="lead">Updated 25 November 2026.</p>
 
     <h2 id="summary">In short</h2>
-    <p>Wanderer has no accounts, no adverts, no analytics and no tracking. Your location, your recorded tracks and your planned routes stay on your iPhone. Nothing is collected about you, and nothing is sold or shared.</p>
+    <p>Wanderer has no accounts, no adverts, no analytics and no tracking. Your location never leaves your device. Your recorded tracks and planned routes are kept on your device and in your own iCloud Drive, and, only if you choose, saved to Apple Health. Nothing is collected about you by the developer, and nothing is sold or shared.</p>
 
     <h2 id="location">Your location</h2>
     <p>Wanderer uses your location to show where you are on the map and, while you're recording, to draw your track. Your position is used on the phone and is never sent anywhere.</p>
 
     <h2 id="stored">What is stored</h2>
-    <p>Recorded tracks and saved routes are kept on your iPhone, in Wanderer's folder in the Files app, where you can see, copy and delete them. Maps and footpaths you've viewed or downloaded are kept on the phone so they work offline. Deleting the app deletes all of it.</p>
+    <p>Recorded tracks and saved routes are kept as files you can see, copy and delete in the Files app. Maps, footpaths and heights you've viewed or downloaded are kept on the device so they work offline; deleting the app deletes them. A recording that is still under way is kept on the device until you finish it.</p>
+
+    <h2 id="icloud">iCloud</h2>
+    <p>If iCloud Drive is switched on, your tracks and routes are stored in your own iCloud Drive, in a folder called Wanderer, so every iPhone and iPad signed in to your Apple Account has the same ones. They are stored by Apple under your account and Apple's privacy policy; the developer has no access to them. With iCloud Drive off, they stay on the device.</p>
+
+    <h2 id="health">Apple Health</h2>
+    <p>If you switch on <em>Save to Apple Health &amp; Fitness</em>, each finished track is saved to Apple Health as a workout, with its route, distance, time, climb and estimated calories, so it appears in the Fitness app. To estimate calories Wanderer reads your weight from Health, if you allow it. Nothing else is read from Health, and Health data is never sent anywhere by Wanderer or used for anything else. You can change what Wanderer may read and write at any time in the Health app.</p>
 
     <h2 id="network">What goes over the internet</h2>
     <p>To show maps and plan routes, Wanderer downloads them as you need them. These requests contain nothing about you, but like any request on the internet they come from your connection's IP address, and the pieces requested show which part of the country you're looking at:</p>
     <ul>
       <li><strong>Map pictures</strong> come from Ordnance Survey's map service (api.os.uk).</li>
-      <li><strong>Footpath data</strong> comes from Wanderer's own copy of OpenStreetMap, served through Amazon CloudFront, in squares of 10 km. If that can't be reached, Wanderer asks OpenStreetMap's public Overpass service (overpass-api.de) instead.</li>
+      <li><strong>Footpath and height data</strong> come from Wanderer's own copies of OpenStreetMap and OS Terrain 50, served through Amazon CloudFront, in squares of 10 km. If the footpaths can't be reached, Wanderer asks OpenStreetMap's public Overpass service (overpass-api.de) instead.</li>
+      <li><strong>Searches</strong> for a place or postcode send what you type to Ordnance Survey's place-name service (api.os.uk) and, if that finds nothing, to Apple's map search. Grid references are worked out on the device and not sent.</li>
     </ul>
-    <p>Neither your location nor your tracks or routes are sent in these requests, and Wanderer keeps no record of them. Ordnance Survey, Amazon and the Overpass service may keep ordinary server logs under their own policies.</p>
+    <p>Your location, tracks and routes are not sent in these requests, and Wanderer keeps no record of them. Ordnance Survey, Amazon, Apple and the Overpass service may keep ordinary server logs under their own policies.</p>
 
     <h2 id="permissions">Permissions</h2>
     <ul>
       <li><strong>Location</strong>, to show your position and record tracks, including with the phone locked while a recording is under way.</li>
       <li><strong>Motion &amp; Fitness</strong>, to measure how much you climb with the barometer.</li>
+      <li><strong>Health</strong>, only if you switch it on: to save workouts, and to read your weight for the calorie estimate.</li>
     </ul>
     <p>You can change these at any time in the iPhone Settings app.</p>
 
